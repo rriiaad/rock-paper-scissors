@@ -45,7 +45,7 @@
     border: 3px solid hsl(217, 16%, 45%);
     padding: 6px 26px;
     border-radius: 10px;
-    bottom: 10vh;
+    bottom: 7vh;
     right: 37vw;
   }
 
@@ -91,5 +91,23 @@
     position: absolute;
     top: 85vh;
     right: 48vw;
+  }
+
+  .game-choice {
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hand h1 {
+    order: 2;
+    font-size: 12px;
+  }
+
+  .result {
+    order: 3;
+    position: absolute;
+    top: 62vh;
+    right: 26vw;
+    font-size: 24px;
   }
 }
