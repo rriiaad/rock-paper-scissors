@@ -61,7 +61,7 @@ function result(user, ia) {
     (user == "rock" && ia == "paper") ||
     (user == "sisrource" && ia == "rock")
   ) {
-    document.querySelector("#res").textContent = "YOU LOOS";
+    document.querySelector("#res").textContent = "YOU LOST";
     return;
   }
   score = document.querySelector("#score").textContent;
