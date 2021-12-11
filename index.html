@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;1,200;1,300&family=Kumbh+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <title>Rock paper scissors</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="Score-Board">
+        <div class="title">
+          <img src="././images/logo.svg" />
+        </div>
+        <div class="score">
+          <p>SCORE</p>
+          <h1 id="score">0</h1>
+        </div>
+      </div>
+
+      <div class="game-container">
+        <div class="game">
+          <div class="paper">
+            <img
+              src="./images/Paper.png"
+              alt="paper"
+              onClick="pickHand('paper')"
+            />
+          </div>
+          <div class="sisrource">
+            <img
+              src="./images/Scissors.png"
+              alt="sisources"
+              onClick="pickHand('sisrource')"
+            />
+          </div>
+          <div class="rock">
+            <img
+              src="./images/Rock.png"
+              alt="rock"
+              onClick="pickHand('rock')"
+            />
+          </div>
+        </div>
+        <div class="game-choice">
+          <div class="userhand hand"></div>
+          <div class="result">
+            <h1 id="res">YOU WIN</h1>
+            <div id="restart">PLAY AGAIN</div>
+          </div>
+          <div class="iaPick hand"></div>
+        </div>
+      </div>
+      <div class="rules">RULES</div>
+      <div class="pop-up-wrapper">
+        <div class="pop-up">
+          <img id="close" src="./images/icon-close.svg" alt="close icone" />
+          <h1>RULES</h1>
+          <img id="img-rule" src="./images/image-rules.svg" alt="game rules" />
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
